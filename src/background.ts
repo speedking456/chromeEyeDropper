@@ -176,19 +176,6 @@ var bg = {
                 }
             })
         })
-
-        /**
-         * When Eye Dropper is just installed, we want to display nice
-         * page to user with some instructions
-         */
-        chrome.runtime.onInstalled.addListener((object: chrome.runtime.InstalledDetails) => {
-            if (object.reason === 'install') {
-                chrome.tabs.create({
-                    url: 'https://eyedropper.org/installed',
-                    selected: true,
-                })
-            }
-        })
     },
     setBadgeColor: function (color: string) {
         console.info('Setting badge color to ' + color)
