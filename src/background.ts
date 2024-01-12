@@ -54,7 +54,7 @@ var bg = {
         dropperCursor: 'default',
         plus: false,
         plus_type: null,
-        enablePromoOnUpdate: true,
+        enablePromoOnUpdate: false,
     },
     defaultPalette: 'default',
     settings: {} as BgSettings,
